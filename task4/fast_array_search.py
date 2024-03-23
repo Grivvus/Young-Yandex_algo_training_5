@@ -5,18 +5,18 @@ def find_min_pos(nums: list[int], min_num: int) -> int:
     l = 0
     r = len(nums) - 1
     while l != r:
-        mid = (l+r) // 2
+        mid = (l + r) // 2
         if nums[mid] >= min_num:
             r = mid
         else:
             l = mid + 1
     return l
 
-def find_max_pos(nums: list[int], max_num) -> int:
+def find_max_pos(nums: list[int], max_num: int) -> int:
     l = 0
     r = len(nums) - 1
     while l != r:
-        mid = (l+r+1) // 2
+        mid = (l + r + 1) // 2
         if nums[mid] <= max_num:
             l = mid
         else:
