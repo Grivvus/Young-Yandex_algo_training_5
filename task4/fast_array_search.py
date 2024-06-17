@@ -25,7 +25,7 @@ def find_max_pos(nums: list[int], max_num: int) -> int:
 
 
 def numbers_between(nums: list[int], min_num: int, max_num: int) -> int:
-    if len(nums) == 1 and nums[0] in range(min_num, max_num +1):
+    if len(nums) == 1 and nums[0] in range(min_num, max_num + 1):
         return 1
     elif len(nums) == 1:
         return 0
@@ -51,4 +51,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
